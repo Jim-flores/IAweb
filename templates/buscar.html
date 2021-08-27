@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block body %}
+<body>
+    <header>
+    </header>
+    
+    <article>
+        <div class="container">
+            <div class="col-12 p-2">
+                <h2>su busqueda fue : {{message}}</h2>
+                <input type="hidden" id="hablar" value="Hola soy botito y le comento que solo pude encontrar estos links para la busqueda de {{message}}">
+                <script >
+	                const bot=document.getElementById('hablar').value;
+                    window.onload=function decir(){
+                    
+                    speechSynthesis.speak(new SpeechSynthesisUtterance(bot));
+                    }
+
+                </script>
+                
+            </div>
+            
+            
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 pt-3">
+                {% for data in datas%}
+                <div class="col">
+                    <div class="card shadow-sm ">
+                        <img  src="{{url_for('send_image', filename=data.3)}}" alt="" height="250px">
+                        <div class="card-body  ">
+                        <h5 class="card-title" >{{data.2}}</h5>
+                        <p class="card-text" style="  text-align: justify;">{{data.4}}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="{{data.5}}" target="_blank">ver mas....</a></button>
+                            
+                          </div>
+                          <small class="text-muted">9 mins</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
+            </div>
+           
+        </div>
+    </article>
+
+          <h1>{{res}}</h1> 
+</body>
+{% endblock %}
