@@ -1,0 +1,62 @@
+{"sentimientos":[
+    {"tag": "saludos",
+        "patterns": ["hola","que tal","buenos dias", "buenas tardes", "buenas noches","ya llegue" ],
+        "responses": ["Estas son las recomendaciones de hoy","Un gusto tenerte de vuelta, esto hay para ti", "Feliz de volverte a ver", "Hola, esto es lo que encontre"]
+    },
+
+    {"tag": "distraccion",
+        "patterns": ["puedo hacer"," hago"," libre", "se acabaron los trabajos", "sugerir","aburrido" ],
+        "responses": ["Una lista de entretenimientos para ti","Las mejores distracciones para ti", "Esto es lo que encontre", "Quizas esto te pueda encantar"]
+    },
+    {"tag": "tv",
+        "patterns": ["television","televisor no sirve","partido", "futbol","resolucion", "HD","noticias","telenovelas","netflix","HBO","series","canal" ],
+        "responses": ["Una lista de televisores","Los mejores televisores"]
+    },
+    {"tag": "peliculas",
+        "patterns": ["para ver","cine","cinema","pop corn", "canchita", "vemos","cartelera"],
+        "responses": ["Te presentamos una lista de peliculas","Puedes disfrutar del cine en tu casa"]
+    },
+    {"tag": "peliculas_accion",
+        "patterns": ["accion buenas","adrenalina","epicas","explosiones"],
+        "responses": ["Te presentamos accion"]
+    },
+    {"tag": "peliculas_animadas",
+        "patterns": ["disney","animados","princesas","ver familia"],
+        "responses": ["Te presentamos una animacion"]
+    },
+    {"tag": "peliculas_terror",
+        "patterns": ["susto","miedo","noche","muertos","fantasmas","asesinos","sangre"],
+        "responses": ["Te presentamos una terror"]
+    },
+    {"tag": "peliculas_romanticas",
+        "patterns": ["amor","historia","romantico","lindo","nostalgico"],
+        "responses": ["Te presentamos una romantica"]
+    },
+    {"tag": "musica",
+        "patterns": ["playlist","musica","hit", "musica de moda","top de musica","eschucar","bailar","fiesta"],
+        "responses": ["Lista gozu de musicas","botito te da estas musicas"]
+    },
+    {"tag": "hotel_barato",
+        "patterns": ["no tengo dormir","hotel barato para quedarme","hotel economico para dormir", "hostal barato","hospedaje economico","una estrella","dos estrellas","lugar para mi presupuesto","quedarme"],
+        "responses": ["Lista de hoteles baratos"]
+    },
+
+    {"tag": "hotel_caro",
+        "patterns": ["5 estrellas","elegante","pent house", "bonito lugar","matrimonial","lugar caro","pasarla genial","experiencia inolvidable","dormir bien"],
+        "responses": ["Lista de hoteles caros"]
+    },
+
+    {"tag": "comida_cara",
+        "patterns": ["restaurante lujoso"," 5 tenedores","cena de gala", "bebidas","decente","turistico","entrada","dolares","euros","comer para celebrar"],
+        "responses": ["Lista de lugares con comidas caras"]
+    },
+
+    {"tag": "comida_barata",
+        "patterns": ["tia veneno", "antichuco","antojo", "hambre tengo", "quiero comer","soles","restaurante lujoso","gourmete","universitario","comida economica","restaurante barato","restaunte economico","agachado"],
+        "responses": ["Lista de lugares con comidas baratas"]
+    },
+    {"tag": "herramientas",
+        "patterns": ["pared","percutor","pintura", "herramientas","decorar","remodelar","instalar","desarmar","puerta","ventana"],
+        "responses": ["Lista de lugares de herramientas"]
+    }
+]}
